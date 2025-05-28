@@ -1,0 +1,14 @@
+void backtrack(parameters...) {
+    if (solution_found_condition) {
+        // process the solution
+        return;
+    }
+
+    for (each possible choice) {
+        if (choice is valid) {
+            make the choice;
+            backtrack(updated parameters);
+            undo the choice; // BACKTRACK
+        }
+    }
+}
